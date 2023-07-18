@@ -1,0 +1,36 @@
+.highlight {
+    color: #3f77e4 !important;
+}
+
+.feature-section {
+    text-align: center;
+    padding: 50px;
+}
+
+.feature-heading {
+    font-size: 28px;
+    margin-bottom: 30px;
+}
+
+.feature-cards {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.app-build-button {
+    background-color: orange;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.app-build-button:hover {
+    background-color: #ff8800;
+}

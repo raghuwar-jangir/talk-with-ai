@@ -1,0 +1,29 @@
+.feature-card {
+  flex: 1;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  background-color: #2b62cc;
+}
+
+
+.feature-card text {
+  font-size: 18px;
+  /* font-weight: lighter; */
+  margin-bottom: 10px;
+}
+
+.feature-card p {
+  font-size: 16px;
+}
+
+.feature-card img {
+  max-width: 100%;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  width: 100px;
+  /* mix-blend-mode: color-burn; */
+}
