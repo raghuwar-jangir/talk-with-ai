@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 .highlight {
     color: #3f77e4 !important;
 }
@@ -19,7 +20,6 @@
     margin-bottom: 30px;
 }
 
-
 .easy-setup-button {
     background-color: orange;
     color: black;
@@ -38,6 +38,55 @@
 
 .active-card text {
     border: 2px solid #ddd;
-    /* Add a 2px solid border with a light gray color (#ddd) */
     box-sizing: border-box;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .easy-setup {
+        padding: 30px;
+    }
+
+    .easy-setup-heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .easy-setup-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .easy-setup-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    .active-card text {
+        border: 1px solid #ddd;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .easy-setup {
+        padding: 20px;
+    }
+
+    .easy-setup-heading {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .easy-setup-cards {
+        gap: 5px;
+    }
+
+    .easy-setup-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
+
+    .active-card text {
+        border: 1px solid #ddd;
+    }
 }

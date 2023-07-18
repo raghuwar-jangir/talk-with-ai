@@ -1,73 +1,77 @@
+/* Common styles for all screen sizes */
 .banner {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    /* background-color: #f0f0f0; */
-    /* Set the background color of the banner */
     padding: 50px;
-
 }
 
 .banner-text {
     flex: 1;
-    /* Take up available space in the left column */
     margin: 30px;
     text-align: left;
 }
 
 .banner-text h1 {
-    /* font-size: 36px; */
     margin-bottom: 20px;
-    /* text-align: left; */
-    /* justify-content: ; */
     line-height: 1.1;
 }
 
 .banner-text p {
     font-size: 18px;
-    /* text-align: left; */
     margin: 30px 0;
 }
 
 .build-btn {
     margin: 30px 0;
     background-color: #fa9d00;
-    /* Orange background color */
     color: #000;
-    /* Black text color */
     padding: 12px 20px;
-    /* Adjust padding as needed */
     font-size: 16px;
-    /* Adjust font size as needed */
     border: none;
     border-radius: 5px;
-    /* Add rounded corners (optional) */
     cursor: pointer;
     text-decoration: none;
     font-weight: bold;
-
 }
 
 .build-btn:hover {
     background-color: #FF8C00;
-    /* Orange background color on hover */
 }
 
 .banner-image {
-    /* flex: 1; */
-    /* Take up available space in the right column */
     text-align: right;
     margin: 30px;
-    /* Align the image to the right */
 }
 
 .banner-image img {
     max-width: 70%;
-    /* Make sure the image doesn't exceed its container */
     border-radius: 10px;
-    /* Add a border radius for rounded corners (optional) */
 }
 
 .highlight {
     color: #3f77e4 !important;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .banner {
+        flex-direction: column;
+    }
+
+    .banner-text,
+    .banner-image {
+        text-align: center;
+        margin: 10px;
+    }
+
+    .banner-image img {
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .banner {
+        padding: 30px;
+    }
 }

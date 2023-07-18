@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 .feature-card {
   flex: 1;
   border-radius: 10px;
@@ -7,10 +8,8 @@
   background-color: #2b62cc;
 }
 
-
 .feature-card text {
   font-size: 18px;
-  /* font-weight: lighter; */
   margin-bottom: 10px;
 }
 
@@ -25,5 +24,41 @@
   border: 2px solid #ddd;
   box-sizing: border-box;
   width: 100px;
-  /* mix-blend-mode: color-burn; */
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+  .feature-card {
+    padding: 10px;
+  }
+
+  .feature-card text {
+    font-size: 16px;
+  }
+
+  .feature-card p {
+    font-size: 14px;
+  }
+
+  .feature-card img {
+    width: 80px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .feature-card {
+    padding: 5px;
+  }
+
+  .feature-card text {
+    font-size: 14px;
+  }
+
+  .feature-card p {
+    font-size: 12px;
+  }
+
+  .feature-card img {
+    width: 60px;
+  }
 }

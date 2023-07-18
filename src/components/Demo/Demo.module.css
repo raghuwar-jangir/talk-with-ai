@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 .highlight {
     color: #3f77e4 !important;
 }
@@ -9,7 +10,6 @@
 }
 
 .app-demo h2 {
-    /* font-size: 28px; */
     margin-bottom: 20px;
 }
 
@@ -17,7 +17,6 @@
     max-width: 100%;
     margin-bottom: 10px;
     width: 80%;
-    /* height: auto; */
 }
 
 .app-demo-text {
@@ -39,4 +38,34 @@
 
 .app-demo-button:hover {
     background-color: #ff8800;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .app-demo {
+        width: 90%;
+    }
+
+    .app-demo-video {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .app-demo {
+        padding: 30px;
+    }
+
+    .app-demo h2 {
+        font-size: 24px;
+    }
+
+    .app-demo-text {
+        font-size: 18px;
+    }
+
+    .app-demo-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
 }

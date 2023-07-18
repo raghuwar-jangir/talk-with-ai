@@ -1,3 +1,4 @@
+/* Common styles for all screen sizes */
 .highlight {
     color: #3f77e4 !important;
 }
@@ -33,4 +34,46 @@
 
 .app-build-button:hover {
     background-color: #ff8800;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .feature-section {
+        padding: 30px;
+    }
+
+    .feature-heading {
+        font-size: 24px;
+        margin-bottom: 20px;
+    }
+
+    .feature-cards {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .app-build-button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .feature-section {
+        padding: 20px;
+    }
+
+    .feature-heading {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+
+    .feature-cards {
+        gap: 5px;
+    }
+
+    .app-build-button {
+        font-size: 12px;
+        padding: 6px 12px;
+    }
 }
